@@ -1,11 +1,9 @@
 const input = document.querySelector("input");
-console.log("input " + input.value !== "0");
 
 document.querySelectorAll(".num__key").forEach((e1) => {
   e1.onclick = () => {
     input.value =
       input.value !== "0" ? input.value + e1.innerText : e1.innerText;
-    console.log("Inside key " + input.value);
   };
 });
 
